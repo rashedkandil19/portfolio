@@ -1,5 +1,5 @@
 :root {
-  --mainColor: #2b496a;
+  --mainColor: #0079ff;
   --c: #1d2128;
 }
 * {
@@ -463,4 +463,5 @@ footer {
   background: var(--mainColor);
   color: white;
 }
+
 
