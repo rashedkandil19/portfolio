@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>TODO LIST</title>
+  </head>
+
+  <body>
+    <!-- themes -->
+    <div class="themeContainer">
+      <span data-color="white"></span>
+      <span data-color="black"></span>
+    </div>
+    <!-- themes -->
+
+    <!-- todo header -->
+    <div class="containerForHeader">
+      <h1>TODO LIST</h1>
+    </div>
+    <!-- todo header -->
+    <!-- show the add text alert -->
+    <button class="addTasks" id="showAlert">Add Task</button>
+    <div id="sweetAlert" class="sweet-alert">
+      <div class="sweet-content">
+        <h2 style="color: black">Enter your Task:</h2>
+        <input type="text" name="" id="TaskInput" placeholder="Add Your Task" />
+        <button class="CloseAlert" id="closeAlert">Add</button>
+      </div>
+    </div>
+    <!-- show the add text alert -->
+    <!-- tasks -->
+    <div class="addedLists">
+      <h2 class="DelHeading">Add your first Task</h2>
+      <ul id="taskList"></ul>
+    </div>
+    <!-- tasks -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,465 @@
+:root {
+  --mainColor: #950606;
+  --c: #1d2128;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: black;
+  color: white;
+}
+/* nav */
+ul li {
+  list-style: none;
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  position: fixed;
+  z-index: 111;
+  width: 100%;
+  background: black;
+  box-shadow: 0px 0px 5px 0px #8d0000;
+  height: 110px;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+nav .logo p {
+  font-weight: bold;
+  font-size: 20px;
+}
+nav .links {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+nav .links ul {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+nav .links ul a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+  border-bottom: 2px solid transparent;
+  width: 100%;
+  display: block;
+  padding: 15px;
+}
+nav .links ul a:hover {
+  padding: 15px;
+  border-bottom: var(--mainColor) 2px solid;
+}
+nav .contactNow {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.workTog {
+  padding: 10px;
+  background: var(--mainColor);
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.contactNow a:hover {
+  background: #2b496a;
+}
+.contactNow img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+.active {
+  color: var(--mainColor) !important;
+  font-weight: bold !important;
+}
+/* nav */
+/* about */
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.about h1 {
+  text-align: center;
+  margin: 5% 0% 1%;
+  font-size: 50px;
+  color: white;
+}
+.about .aboutContainer {
+  width: 95%;
+  margin: auto;
+}
+.aboutContainer p {
+  width: 90%;
+  margin: auto;
+  font-size: 19px;
+  text-align: center;
+  color: white;
+}
+.aboutContainer .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 80%;
+  margin: 3% auto;
+}
+.Viewprojects {
+  padding: 10px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.abtScondContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.aboutImg img {
+  border-radius: 50%;
+}
+.aboutText {
+  color: white;
+}
+.aboutText h2 {
+  font-size: 35px;
+  margin: 2% 0;
+}
+.aboutText p {
+  font-size: 20px;
+  color: #bdbdbd;
+}
+.exp {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  margin: 9% auto;
+}
+.exp .experiance {
+  text-align: center;
+}
+.exp h2 {
+  font-size: 45px;
+  color: var(--mainColor);
+}
+.exp p {
+  font-size: 30px;
+  color: #bdbdbd;
+}
+/* about */
+/* skills */
+.skillsContainer {
+  width: 90%;
+  margin: auto;
+}
+.skillsContainer h2 {
+  text-align: center;
+  font-size: 50px;
+  margin: 7%;
+}
+
+.skill-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  flex-wrap: wrap;
+}
+.skill-group .skill {
+  border: 3px solid #3d3d3d;
+  width: 290px;
+  height: 350px;
+  padding: 20px;
+  box-shadow: 0px 0px 8px #464646;
+  border-radius: 15px;
+}
+.skill-group .skill h3 {
+  font-size: 27px;
+  margin: 4% 0;
+}
+.skillNameGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin: 9% 5%;
+}
+.skillNameGroup .Skill-name {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 2px solid;
+  width: 220px;
+  justify-content: center;
+  padding: 9px;
+  border-radius: 24px;
+  font-size: 17px;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.skillNameGroup .Skill-name:hover {
+  background: #3d3d3d;
+  color: white;
+}
+.Skill-name i,
+.Skill-name p {
+  font-size: 20px;
+}
+/* skills */
+/* projects */
+.projects h2 {
+  font-size: 50px;
+  text-align: center;
+  margin: 5% 0;
+}
+.projects .projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  gap: 50px;
+  justify-content: center;
+}
+.projectsContainer .project {
+  width: 400px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background: #353535;
+  padding: 35px 23px;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+.projectsContainer .project:hover {
+  box-shadow: 0px 0px 10px #464646;
+}
+.project img {
+  width: 350px;
+  margin: auto;
+  transition: 0.3s ease-in-out;
+  border-radius: 16px;
+  cursor: pointer;
+}
+.project img:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+.project h3 {
+  font-size: 32px;
+  margin: 3% 0;
+}
+.project p {
+  color: #acacac;
+  margin: 0% 0 5%;
+}
+.langForProj {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 5% 0;
+}
+.langForProj span {
+  color: #ffffff;
+  border: 2px solid;
+  font-size: 15px;
+  padding: 10px 25px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.langForProj span:hover {
+  background: #2b496a;
+  border: #2b496a 2px solid;
+  color: white;
+}
+.linksForProj {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5% 0;
+}
+.linksForProj a {
+  color: #000000;
+  text-decoration: none;
+  padding: 10px 40px;
+  background: white;
+  border-radius: 10px;
+  border: transparent;
+  transition: 0.3s ease-in-out;
+}
+.linksForProj a:hover {
+  background: #2b496a;
+  color: white;
+}
+/* projects */
+/* contact */
+.contact h2 {
+  text-align: center;
+  margin: 5%;
+  font-size: 50px;
+}
+.contactContainer {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+.ContactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 30px;
+}
+.contactLink {
+  display: flex;
+  gap: 5%;
+}
+.contactLink a {
+  color: var(--mainColor);
+  transition: 0.3s ease-in-out;
+}
+.contactLink a:hover {
+  color: var(--mainColor);
+}
+.formContainer {
+  width: 90%;
+  border: 2px solid #2b496a;
+  padding: 20px;
+  border-radius: 15px;
+}
+.formContainer h3 {
+  font-size: 25px;
+  margin: 2% 0 6% 0;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: 2px solid #2b496a;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  position: relative;
+  line-height: 23px;
+  z-index: 11;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+form div {
+  position: relative;
+}
+.textForInput {
+  position: absolute;
+  top: 8%;
+  left: 3%;
+  padding: 10px 10px 0 10px;
+  transition: 0.5s ease-in-out;
+}
+textarea {
+  width: 100%;
+  height: 250px;
+  resize: none;
+}
+form input:focus ~ .textForInput,
+form input:valid ~ .textForInput,
+form textarea:focus ~ .textForInput,
+form textarea:valid ~ .textForInput {
+  top: -17px;
+  left: 5px;
+  font-size: 18px;
+  background-color: #000000;
+  color: #2b496a;
+  z-index: 11111;
+}
+form button {
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: transparent;
+  background: var(--mainColor);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+form button:hover {
+  background: #2b496a;
+}
+form button:active {
+  background-color: #1d3854;
+}
+/* contact */
+/* footer */
+footer {
+  margin: 5% 0 0;
+  background: #1a1a1a;
+}
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+/* footer */
+#scrollToUp {
+  position: fixed;
+  color: rgb(0, 0, 0);
+  bottom: 30px;
+  right: 30px;
+  padding: 14px 18px;
+  border: 4px solid transparent;
+  background: rgb(255, 254, 254);
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 21px;
+  display: none;
+  z-index: 998;
+  transition: 0.5s ease;
+}
+#scrollToUp:hover {
+  background: var(--mainColor);
+  color: white;
+}

@@ -1,0 +1,176 @@
+* {
+  font-family: sans-serif;
+
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-weight: 800;
+  text-align: center;
+
+}
+
+.containerForHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#showAlert {
+  position: absolute;
+  bottom: 25px;
+  left: 14%;
+  background-color: #007bff;
+  border: transparent;
+  color: white;
+  padding: 9px;
+  border-radius: 6px;
+  font-weight: 700;
+  width: 71%;
+}
+
+
+.addedLists {
+  background-color: rgb(61, 61, 61);
+  border-radius: 9px;
+  display: flex;
+  color: white;
+  justify-content: center;
+}
+
+.addedLists h2 {
+  font-size: 19px;
+}
+
+.sweet-alert {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.sweet-alert .sweet-content input {
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 90%;
+}
+
+.sweet-alert .sweet-content h2 {
+  font-size: 17px;
+}
+
+.sweet-alert .sweet-content .CloseAlert {
+  background-color: #3f6184;
+  padding: 5px;
+  width: 90px;
+  color: white;
+  border: transparent;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.sweet-content {
+  text-align: center;
+  opacity: 0;
+  animation-duration: 0.5s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.sweet-alert.show {
+
+  display: block;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  animation-name: slideIn;
+  width: 86%;
+}
+
+.sweet-alert.show .sweet-content {
+  opacity: 1;
+  animation-name: fadeIn;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translate(-50%, -100%) scale(0.5);
+  }
+
+  to {
+      transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
+.DelHeading {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 96%;
+  display: contents
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  border-bottom: 1px solid #ccc;
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  width: 90%;
+  border: transparent;
+}
+
+.timestamp {
+  font-size: 9px;
+  color: #888;
+}
+
+.outPut {
+  display: flex;
+  flex-direction: column;
+  margin-left: -54%;
+  width: 29%
+}
+
+.fa-solid {
+  color: red;
+  cursor: pointer;
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,81 @@
+@media (max-width: 1024px) {
+}
+@media (max-width: 980px) {
+  nav {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  nav .contactNow {
+    width: 100%;
+    flex-direction: column;
+    align-items: normal;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  nav .links {
+    display: none;
+    flex-direction: column;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    padding: 20px;
+  }
+
+  .links ul {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .contactNow a {
+    padding: 20px;
+    width: 100%;
+  }
+  .links .contact {
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .ContactInfo {
+    width: 100%;
+  }
+  .links.show {
+    display: flex !important;
+  }
+  nav .links ul a:hover {
+    background: #86868663;
+    padding: 15px 25px;
+  }
+  .aboutContainer .links {
+    width: 100%;
+  }
+  .contactContainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .formContainer {
+    width: 100%;
+  }
+  .projectsContainer .project {
+    width: 290px;
+  }
+  .project img {
+    width: 245px;
+  }
+  .linksForProj a {
+    padding: 8px 20px;
+  }
+  .contactContainer {
+    flex-direction: column;
+  }
+  .formContainer {
+    width: 100%;
+  }
+  .footerContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+}
