@@ -1,0 +1,898 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title data-i18n="pageTitle">
+      RK Tech - Full-Stack Development Company
+    </title>
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="/pics/RK-logo.png" rel="shortcut icon" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="wrap">
+        <a class="logo" href="#home"
+          ><span class="logo-mark"
+            ><img alt="RK Tech Logo" src="/pics/RK-logo.png"
+          /></span>
+          RK Tech</a
+        >
+        <ul class="nav-links">
+          <li>
+            <a class="active" href="#home"
+              ><span data-i18n="Home">Home</span></a
+            >
+          </li>
+          <li>
+            <a href="#about"><span data-i18n="About">About</span></a>
+          </li>
+          <li>
+            <a href="#skills"><span data-i18n="Skills">Skills</span></a>
+          </li>
+          <li>
+            <a href="#projects"><span data-i18n="Projects">Projects</span></a>
+          </li>
+          <li>
+            <a href="#services"><span data-i18n="services">Services</span></a>
+          </li>
+          <li>
+            <a href="#contact"
+              ><span data-i18n="contactEyebrow">Contact</span></a
+            >
+          </li>
+        </ul>
+        <div class="nav-cta">
+          <a class="btn btn-primary btn-sm" href="#contact"
+            ><span data-i18n="letsTalk">✉ Let's Talk</span></a
+          >
+          <button class="btn btn-outline btn-sm dissaperV" id="languageToggle">
+            العربية
+          </button>
+          <button
+            aria-expanded="false"
+            aria-label="Toggle menu"
+            class="burger"
+            id="burgerBtn"
+          >
+            ☰
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu" id="mobileMenu">
+        <ul>
+          <li>
+            <a href="#home"><span data-i18n="Home">Home</span></a>
+          </li>
+          <li>
+            <a href="#about"><span data-i18n="About">About</span></a>
+          </li>
+          <li>
+            <a href="#skills"><span data-i18n="Skills">Skills</span></a>
+          </li>
+          <li>
+            <a href="#projects"><span data-i18n="Projects">Projects</span></a>
+          </li>
+          <li>
+            <a href="#services"><span data-i18n="services">Services</span></a>
+          </li>
+          <li>
+            <a href="#contact"
+              ><span data-i18n="contactEyebrow">Contact</span></a
+            >
+          </li>
+          <button class="btn btn-outline btn-sm" id="languageToggle">
+            العربية
+          </button>
+          <li class="mm-cta">
+            <a
+              class="btn btn-primary btn-sm"
+              href="#contact"
+              style="width: 100%; justify-content: center"
+              ><span data-i18n="letsTalk">✉ Let's Talk</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow"
+            ><span class="dot"></span>
+            <span data-i18n="heroEyebrow"
+              >Full-Stack Developer &amp; UI Designer</span
+            ></span
+          >
+          <h1>
+            <span data-i18n="heroPrefix">Your technology partner for</span>
+            <span class="accent"
+              ><span data-i18n="heroAccent"
+                >designing scalable digital applications and products</span
+              ></span
+            >
+          </h1>
+          <p class="lead">
+            <span data-i18n="heroLead"
+              >We design and build modern web apps end to end - from React
+              interfaces down to the Express APIs and DataBase behind them.
+              Whether you need a polished landing page or a full custom platform
+              with logins and a database, I turn the idea into a working product
+              your customers can actually use.</span
+            >
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact"
+              ><span data-i18n="workTogether">✉ Let's Work Together</span></a
+            >
+            <a class="btn btn-outline" href="#projects"
+              ><span data-i18n="viewWork">⌘ View Our Work</span></a
+            >
+          </div>
+          <p class="availability">
+            <span class="pulse"></span>
+            <span data-i18n="availability"
+              >Available for freelance &amp; contract work - usually replies
+              within 24 hours.</span
+            >
+          </p>
+          <div class="stack-label">
+            <span data-i18n="techStack">Tech Stack</span>
+          </div>
+          <div class="stack-icons">
+            <span><i class="devicon-html5-plain colored"></i></span>
+            <span><i class="devicon-css3-plain colored"></i></span>
+            <span><i class="devicon-javascript-plain colored"></i></span>
+            <span><i class="devicon-react-original colored"></i></span>
+            <span><i class="devicon-nodejs-plain colored"></i></span>
+            <span><i class="devicon-mongodb-plain colored"></i></span>
+            <span><i class="devicon-git-plain colored"></i></span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-photo-frame">
+            <img
+              src="/pics/web.jpg"
+              alt="Illustrated developer workstation with terminals and data panels"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-photo-frame">
+          <img
+            src="/pics/website development.jpg"
+            alt="Illustrated developer workstation with terminals and data panels"
+          />
+        </div>
+        <div>
+          <span class="eyebrow"
+            ><span class="dot"></span>
+            <span data-i18n="aboutEyebrow">About Us</span></span
+          >
+          <h2>
+            <span data-i18n="aboutTitle1">Turning Ideas Into Digital</span>
+            <span class="accent"
+              ><span data-i18n="aboutTitle2">Experiences.</span></span
+            >
+          </h2>
+          <p class="lead">
+            <span data-i18n="aboutLead"
+              >We are a full-stack development team focused on building modern,
+              responsive, and user-friendly web applications. From React and
+              Vite on the front end to Express and MongoDB on the backend, we
+              build complete solutions with secure JWT-based authentication
+              tying everything together. We don't just write code; we plan the
+              data model, build the API, craft the interface, and deliver
+              products that are built to perform in production. Our goal on
+              every project is simple: fewer surprises for you, a product that's
+              easy to maintain, and an experience your users will genuinely
+              enjoy.</span
+            >
+          </p>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <span class="ic">⌨</span>
+              <div>
+                <strong><span data-i18n="cleanCode">Clean Code</span></strong
+                ><span
+                  ><span data-i18n="cleanCodeDesc"
+                    >Readable, documented, and structured so future changes are
+                    easy - not a rebuild.</span
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="feature-card">
+              <span class="ic">▣</span>
+              <div>
+                <strong
+                  ><span data-i18n="responsive">Responsive Design</span></strong
+                ><span
+                  ><span data-i18n="responsiveDesc"
+                    >Every layout is tested across mobile, tablet, and desktop
+                    before it ships.</span
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="feature-card">
+              <span class="ic">◆</span>
+              <div>
+                <strong><span data-i18n="modernUI">Modern UI/UX</span></strong
+                ><span
+                  ><span data-i18n="modernUIDesc"
+                    >Interfaces designed around how real users actually navigate
+                    and decide.</span
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="feature-card">
+              <span class="ic">⚡</span>
+              <div>
+                <strong><span data-i18n="performance">Performance</span></strong
+                ><span
+                  ><span data-i18n="performanceDesc"
+                    >Optimized loading, caching, and queries so the app feels
+                    instant.</span
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-primary" href="#services"
+            ><span data-i18n="startWebsite">Start Your first Website</span></a
+          >
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="stats-bar">
+          <div class="stat">
+            <div class="num">2+</div>
+            <div class="lbl">
+              <span data-i18n="years">Years Experience</span>
+            </div>
+          </div>
+          <div class="stat">
+            <div class="num">6+</div>
+            <div class="lbl">
+              <span data-i18n="projectsCompleted">Projects Completed</span>
+            </div>
+          </div>
+          <div class="stat">
+            <div class="num">6+</div>
+            <div class="lbl">
+              <span data-i18n="technologies">Technologies</span>
+            </div>
+          </div>
+          <div class="stat">
+            <div class="num">100%</div>
+            <div class="lbl">
+              <span data-i18n="commitment">Commitment</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="skills" id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow"
+            ><span class="dot"></span>
+            <span data-i18n="mySkills">My Skills</span></span
+          >
+          <h2>
+            <span data-i18n="technologiesWe">Technologies We</span>
+            <span class="accent"
+              ><span data-i18n="workWith">Work With</span></span
+            >
+          </h2>
+          <p>
+            <span data-i18n="skillsLead"
+              >A full-stack toolkit for taking a project from a Figma file to a
+              deployed, working application - front end, back end, and the tools
+              in between.</span
+            >
+          </p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="head">
+              <span class="ic">◆</span>
+              <span data-i18n="frontend">Frontend</span>
+            </div>
+            <div class="skill-items">
+              <span class="pill"
+                ><i class="devicon-html5-plain colored"></i> HTML5</span
+              >
+              <span class="pill"
+                ><i class="devicon-css3-plain colored"></i> CSS3</span
+              >
+              <span class="pill"
+                ><i class="devicon-javascript-plain colored"></i>
+                JavaScript</span
+              >
+              <span class="pill"
+                ><i class="devicon-react-original colored"></i> React</span
+              >
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="head">
+              <span class="ic">▤</span> <span data-i18n="backend">Backend</span>
+            </div>
+            <div class="skill-items">
+              <span class="pill"
+                ><i class="devicon-nodejs-plain colored"></i> Node.js</span
+              >
+              <span class="pill"
+                ><i class="devicon-express-original colored"></i>
+                Express.js</span
+              >
+              <span class="pill"
+                ><i class="devicon-mongodb-plain colored"></i> MongoDB</span
+              >
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="head">
+              <span class="ic">🛠</span> <span data-i18n="tools">Tools</span>
+            </div>
+            <div class="skill-items">
+              <span class="pill"
+                ><i class="devicon-git-plain colored"></i> Git</span
+              >
+              <span class="pill"
+                ><i class="devicon-github-original colored"></i> GitHub</span
+              >
+              <span class="pill"
+                ><i class="devicon-vscode-plain colored"></i> VS Code</span
+              >
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="head">
+              <span class="ic">🎨</span> <span data-i18n="design">Design</span>
+            </div>
+            <div class="skill-items">
+              <span class="pill"
+                ><i class="devicon-figma-plain colored"></i> Figma</span
+              >
+              <span class="pill"
+                ><i class="devicon-photoshop-plain colored"></i> Photoshop</span
+              >
+              <span class="pill"
+                ><i class="devicon-illustrator-plain colored"></i>
+                Illustrator</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="wrap">
+        <div class="projects-top">
+          <div>
+            <span class="eyebrow"
+              ><span class="dot"></span>
+              <span data-i18n="featuredProject">Featured Project</span></span
+            >
+            <h2 style="margin-top: 14px">
+              <span data-i18n="our">Our</span>
+              <span class="accent"
+                ><span data-i18n="latestWork">Latest Work</span></span
+              >
+            </h2>
+            <p>
+              <span data-i18n="projectsLead"
+                >A selection of projects covering full-stack apps, business
+                sites, and small tools - each one built, tested, and shipped end
+                to end.</span
+              >
+            </p>
+          </div>
+          <a class="btn btn-outline btn-sm" href="#"
+            ><span data-i18n="viewAll">View All Projects →</span></a
+          >
+        </div>
+        <div class="featured-card">
+          <div class="featured-mock">
+            <img
+              alt="Spotly app mockup"
+              data-i18n-alt="spotlyAlt"
+              src="/projects/spotly.png"
+            />
+          </div>
+          <div class="featured-info">
+            <span class="featured-tag eyebrow"
+              ><span class="dot"></span>
+              <span data-i18n="featured">Featured</span></span
+            >
+            <h3>Spotly</h3>
+            <div class="sub">
+              <span data-i18n="spotlySub"
+                >Location &amp; Business Discovery Platform</span
+              >
+            </div>
+            <p>
+              <span data-i18n="spotlyDesc"
+                >A full-stack platform to search and discover businesses using
+                Google Maps data, with search caching, user accounts, and
+                analytics.</span
+              >
+            </p>
+            <div class="tech-tags">
+              <span>React</span><span>Node.js</span><span>MongoDB</span
+              ><span>Google Maps API</span>
+            </div>
+            <div class="featured-actions">
+              <a
+                class="btn btn-primary btn-sm"
+                href="https://spotly-orcin.vercel.app/"
+                ><span data-i18n="liveDemo">Live Demo ↗</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="other-projects">
+          <div class="proj-card">
+            <div class="proj-thumb">
+              <img
+                alt="lacabana Landing Page mockup"
+                data-i18n-alt="lacabanaAlt"
+                src="/projects/lacabana.png"
+              />
+            </div>
+            <div class="proj-body">
+              <h4>lacabana Landing Page</h4>
+              <p><span data-i18n="productShowcase">Product showcase</span></p>
+              <div class="proj-tags">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <div class="featured-actions">
+                <a
+                  class="btn btn-primary btn-sm"
+                  href="https://rashedkandil19.github.io/lacabana/"
+                  ><span data-i18n="liveDemo">Live Demo ↗</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="proj-card">
+            <div class="proj-thumb">
+              <img
+                alt="Bisan Trading mockup"
+                data-i18n-alt="bisanAlt"
+                src="/projects/bisan trading company.png"
+              />
+            </div>
+            <div class="proj-body">
+              <h4>Bisan Trading</h4>
+              <p><span data-i18n="companyWebsite">Company website</span></p>
+              <div class="proj-tags">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <div class="featured-actions">
+                <a class="btn btn-primary btn-sm" href="https://bisansy.com/"
+                  ><span data-i18n="liveDemo">Live Demo ↗</span></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services" id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow"
+            ><span class="dot"></span>
+            <span data-i18n="services">Services</span></span
+          >
+          <h2>
+            <span data-i18n="packages">Packages Built Around</span>
+            <span class="accent"
+              ><span data-i18n="yourGoal">Your Goal</span></span
+            >
+          </h2>
+          <p>
+            <span data-i18n="servicesLead"
+              >Every project is scoped around what you actually need - from a
+              single polished page to a full custom application with its own
+              database and login system. Pick a starting point below, or get in
+              touch for a custom quote.</span
+            >
+          </p>
+        </div>
+        <div class="process-strip">
+          <div class="process-step">
+            <div class="p-num">1</div>
+            <h4><span data-i18n="discovery">Discovery Call</span></h4>
+            <p>
+              <span data-i18n="discoveryDesc"
+                >We talk through your goals, audience, and must-have
+                features.</span
+              >
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="p-num">2</div>
+            <h4><span data-i18n="designPlan">Design &amp; Plan</span></h4>
+            <p>
+              <span data-i18n="designPlanDesc"
+                >Wireframes, tech stack, and a clear timeline before any code is
+                written.</span
+              >
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="p-num">3</div>
+            <h4><span data-i18n="buildReview">Build &amp; Review</span></h4>
+            <p>
+              <span data-i18n="buildReviewDesc"
+                >Development in stages with check-ins, so there are no surprises
+                at the end.</span
+              >
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="p-num">4</div>
+            <h4><span data-i18n="launchSupport">Launch &amp; Support</span></h4>
+            <p>
+              <span data-i18n="launchSupportDesc"
+                >Deployment, a walkthrough, and support afterward to fix or
+                extend things.</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="pricing-grid">
+          <!-- Starter Site -->
+          <div class="price-card">
+            <div class="p-name">
+              <span data-i18n="starter">Starter Site</span>
+            </div>
+
+            <div class="p-for">
+              <span data-i18n="starterFor">
+                A single-page or few-page website to establish your online
+                presence.
+              </span>
+            </div>
+
+            <div class="p-amount">
+              <span class="num">6,000 L.E</span>
+              <span class="per">
+                <span data-i18n="startingPrice">starting price</span>
+              </span>
+            </div>
+
+            <div class="p-note">
+              <span data-i18n="starterDelivery">
+                Typical delivery: 1–2 weeks
+              </span>
+            </div>
+
+            <ul class="price-list">
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature1">
+                  Up to 5 pages (Home, About, Services, Contact, FAQ)
+                </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature2">
+                  Responsive design (mobile, tablet, desktop)
+                </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature3">
+                  Contact form with email delivery
+                </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature4">
+                  On-page SEO basics (titles, meta, alt text)
+                </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature5"> 2 rounds of revisions </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature6">
+                  7 days of post-launch support
+                </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature7">
+                  Domain &amp; hosting setup for the first year
+                </span>
+              </li>
+            </ul>
+
+            <a
+              class="btn btn-outline"
+              href="#contact"
+              onclick="contactWhatsApp('starter site', '6,000 L.E')"
+            >
+              <span data-i18n="getStarted">Get Started</span>
+            </a>
+          </div>
+
+          <!-- Business Website -->
+          <div class="price-card popular">
+            <div class="popular-badge">
+              <span data-i18n="popular">Most Popular</span>
+            </div>
+
+            <div class="p-name">
+              <span data-i18n="business">Business Website</span>
+            </div>
+
+            <div class="p-for">
+              <span data-i18n="businessFor">
+                A professional multi-page website or interactive frontend for a
+                growing business.
+              </span>
+            </div>
+
+            <div class="p-amount">
+              <span class="num">10,000 L.E</span>
+              <span class="per">
+                <span data-i18n="startingPrice">starting price</span>
+              </span>
+            </div>
+
+            <div class="p-note">
+              <span data-i18n="businessDelivery">
+                Typical delivery: 3–4 weeks
+              </span>
+            </div>
+
+            <ul class="price-list">
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature8">
+                  Up to 8 pages with custom UI/UX design
+                </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature9">
+                  Modern React frontend with interactive UI
+                </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature10"> Editable content sections </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature11">
+                  Contact/booking forms with validation
+                </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature12">
+                  SEO structure + basic analytics setup
+                </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature13"> 3 rounds of revisions </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature14">
+                  30 days of post-launch support
+                </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature7">
+                  Domain &amp; hosting setup for the first year
+                </span>
+              </li>
+            </ul>
+
+            <a
+              class="btn btn-primary"
+              href="#contact"
+              onclick="contactWhatsApp('business website', '10,000 L.E')"
+            >
+              <span data-i18n="getStarted">Get Started</span>
+            </a>
+          </div>
+
+          <!-- Full-Stack Application -->
+          <div class="price-card">
+            <div class="p-name">
+              <span data-i18n="fullstack">Full-Stack Web Application</span>
+            </div>
+
+            <div class="p-for">
+              <span data-i18n="fullstackFor">
+                A custom web application with its own backend, database, and
+                user accounts.
+              </span>
+            </div>
+
+            <div class="p-amount">
+              <span class="num">18,000 L.E</span>
+              <span class="per">
+                <span data-i18n="startingPrice">starting price</span>
+              </span>
+            </div>
+
+            <div class="p-note">
+              <span data-i18n="fullstackDelivery">
+                Typical delivery: 5–8+ weeks, scope-dependent
+              </span>
+            </div>
+
+            <ul class="price-list">
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature15">
+                  React frontend + Node.js/Express backend
+                </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature16">
+                  MongoDB database &amp; data modeling
+                </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature17">
+                  User authentication (JWT) &amp; role permissions
+                </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature18">
+                  Admin dashboard for managing content and users
+                </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature19">
+                  Third-party API integrations (maps, payments, etc.)
+                </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature20">
+                  Deployment + 30 days of post-launch support
+                </span>
+              </li>
+
+              <li>
+                <span class="check">✓</span>
+                <span data-i18n="feature7">
+                  Domain &amp; hosting setup for the first year
+                </span>
+              </li>
+            </ul>
+
+            <a
+              class="btn btn-outline"
+              href="#contact"
+              onclick="
+                contactWhatsApp('full-stack web application', '18,000 L.E')
+              "
+            >
+              <span data-i18n="getStarted">Request a Quote</span>
+            </a>
+          </div>
+        </div>
+
+        <p class="services-note">
+          <span data-i18n="servicesNote">
+            Prices are starting points and vary with scope, features, and
+            timeline - every project starts with a free discovery call to scope
+            it properly.
+          </span>
+        </p>
+      </div>
+    </section>
+    <section class="cta" id="contact">
+      <div class="wrap">
+        <span class="eyebrow"
+          ><span class="dot"></span>
+          <span data-i18n="contactEyebrow">Contact</span></span
+        >
+        <h2 style="margin-top: 16px">
+          <span data-i18n="ctaTitle1">Let's Build Something</span>
+          <span class="accent"><span data-i18n="ctaTitle2">Great</span></span>
+          <span data-i18n="ctaTitle3">Together.</span>
+        </h2>
+        <p>
+          <span data-i18n="ctaLead"
+            >Have a project in mind or just want to talk shop? My inbox is
+            open.</span
+          >
+        </p>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="mailto:rashedkandil72@gmail.com"
+            ><span data-i18n="email">✉ Contact via E-Mail</span></a
+          >
+          <button
+            class="btn btn-outline"
+            href="http://wa.me/201044310426"
+            onclick="viaWhatsApp()"
+          >
+            <span data-i18n="whatsapp">Contact via WhatsApp</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <button aria-label="Scroll to top" class="scroll-to-top" id="scrollToTop">
+      ↑
+    </button>
+    <footer>
+      <div class="wrap footer-row">
+        <p>
+          <span data-i18n="footer"
+            >© 2026 Rashed Kandil. All rights reserved.</span
+          >
+        </p>
+        <div class="socials">
+          <a aria-label="GitHub" href="https://github.com/rashedkandil19"
+            ><i class="devicon-github-original"></i
+          ></a>
+          <a
+            aria-label="LinkedIn"
+            href="https://linkedin.com/in/rashed-talaat19"
+            >in</a
+          >
+          <a aria-label="Email" href="mailto:rashedkandil72@gmail.com">✉</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/i18next@25.6.0/dist/umd/i18next.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/i18n.js"></script>
+  </body>
+</html>
