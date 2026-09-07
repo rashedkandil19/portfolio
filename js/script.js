@@ -30,6 +30,13 @@ function viaWhatsApp() {
       burgerBtn.textContent = '☰';
     });
   });
+  window.addEventListener("resize", ()=>{
+    if (window.innerWidth > 980) {
+      mobileMenu.classList.remove('open');
+      burgerBtn.setAttribute('aria-expanded', 'false');
+      burgerBtn.textContent = '☰';
+    }
+  });
 
   const sections = document.querySelectorAll('section[id]');
   const desktopLinks = document.querySelectorAll('.nav-links a');
