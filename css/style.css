@@ -3,8 +3,9 @@
   --bg-soft: #121215;
   --card: #151519;
   --card-line: #232228;
-  --red: #ff3d3d;
-  --red-dim: #ff3d3d33;
+  --red: #b40d0d;
+  --bright-red:#ff3d3d;
+  --red-dim: #b40d0d33;
   --white: #f5f4f2;
   --muted: #9a969c;
   --radius: 14px;
@@ -78,7 +79,7 @@ h3 {
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--red);
+  color: var(--bright-red);
   padding: 6px 14px 6px 10px;
   border: 1px solid var(--red-dim);
   border-radius: 99px;
@@ -88,8 +89,8 @@ h3 {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--red);
-  box-shadow: 0 0 8px var(--red);
+  background: var(--bright-red);
+  box-shadow: 0 0 8px var(--bright-red);
 }
 .btn {
   display: inline-flex;
@@ -109,11 +110,11 @@ h3 {
 .btn-primary {
   background: var(--red);
   color: #fff;
-  box-shadow: 0 8px 24px -8px rgba(255, 61, 61, 0.6);
+  box-shadow: 0 8px 24px -8px rgba(176, 0, 0, 0.6);
 }
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px -8px rgba(255, 61, 61, 0.75);
+  box-shadow: 0 12px 28px -8px rgba(109, 3, 3, 0.75);
 }
 .btn-outline {
   background: transparent;
@@ -212,34 +213,46 @@ nav.wrap {
 
 /* MOBILE DROPDOWN MENU */
 .mobile-menu {
+  display: none;
   max-height: 0;
   overflow: hidden;
   background: var(--bg-soft);
   border-bottom: 1px solid var(--card-line);
   transition: max-height 0.35s ease;
 }
+
 .mobile-menu.open {
-  max-height: 420px;
+  max-height: 470px;
 }
+
 .mobile-menu ul {
   padding: 10px 32px 20px;
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
+
 .mobile-menu a {
   display: block;
   padding: 14px 4px;
   font-size: 15.5px;
   font-weight: 500;
-  color: var(--muted);
+  color: white;
   border-bottom: 1px solid var(--card-line);
   transition: color 0.15s ease;
 }
+
 .mobile-menu a:hover,
 .mobile-menu a.active {
   color: var(--red);
 }
+
+.mobile-menu .mobile-language-toggle {
+  margin: 14px 4px 4px;
+  width: calc(100% - 8px);
+  justify-content: center;
+}
+
 .mobile-menu .mm-cta {
   padding: 16px 4px 4px;
   border-bottom: none;
@@ -262,7 +275,7 @@ nav.wrap {
   margin: 22px 0 20px;
 }
 .hero h1 .accent {
-  color: var(--red);
+  color: var(--bright-red);
 }
 .hero p.lead {
   color: var(--muted);
@@ -396,7 +409,7 @@ nav.wrap {
   margin: 16px 0 16px;
 }
 .about h2 .accent {
-  color: var(--red);
+  color: var(--bright-xred);
 }
 .about > .wrap > .about-grid > div:last-child p.lead {
   color: var(--muted);
@@ -449,7 +462,7 @@ nav.wrap {
   font-family: var(--font-head);
   font-size: 26px;
   font-weight: 700;
-  color: var(--red);
+  color: var(--bright-red);
 }
 .stat .lbl {
   font-size: 12px;
@@ -545,7 +558,7 @@ nav.wrap {
   font-size: 32px;
 }
 .projects-top .accent {
-  color: var(--red);
+  color: var(--bright-red);
 }
 .projects-top p {
   color: var(--muted);
@@ -649,7 +662,7 @@ nav.wrap {
   margin-bottom: 4px;
 }
 .featured-info .sub {
-  color: var(--red);
+  color: var(--bright-red);
   font-size: 12.5px;
   font-weight: 600;
   letter-spacing: 0.03em;
@@ -674,7 +687,7 @@ nav.wrap {
   border-radius: 99px;
   background: rgba(255, 61, 61, 0.08);
   border: 1px solid var(--red-dim);
-  color: var(--red);
+  color: var(--bright-red);
 }
 .featured-actions {
   display: flex;
@@ -810,7 +823,7 @@ nav.wrap {
   font-family: var(--font-head);
   font-size: 34px;
   font-weight: 700;
-  color: var(--red);
+  color: var(--bright-red);
 }
 .price-card .p-amount .per {
   font-size: 13px;
@@ -876,7 +889,7 @@ nav.wrap {
   border-radius: 9px;
   background: rgba(255, 61, 61, 0.1);
   border: 1px solid var(--red-dim);
-  color: var(--red);
+  color: var(--bright-red);
   font-family: var(--font-head);
   font-weight: 700;
   font-size: 14px;
@@ -895,6 +908,24 @@ nav.wrap {
 }
 
 @media (max-width: 980px) {
+  .language-toggle{
+    margin-bottom: 10px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    font-size: 19px;
+  }
+    .mobile-menu {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
   .pricing-grid {
     grid-template-columns: 1fr;
   }
@@ -911,7 +942,7 @@ nav.wrap {
   margin-bottom: 14px;
 }
 .cta .accent {
-  color: var(--red);
+  color: var(--bright-red);
 }
 .cta p {
   color: var(--muted);
